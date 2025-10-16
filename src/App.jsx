@@ -17,7 +17,6 @@ function App() {
       <Experience />
       <Skills />
       <Contact />
-      Hello
     </>
   );
 }
