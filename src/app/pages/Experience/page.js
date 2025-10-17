@@ -30,7 +30,7 @@ export default function Experience() {
                 {experiences.map((exp, index) => (
                     <div
                         key={index}
-                        className="rounded-lg p-8 border border-zinc-600 hover:border-zinc-700 transition-colors">
+                        className="rounded-lg p-5 md:p-8 border border-zinc-600 hover:border-zinc-700 transition-colors">
                         {/* Header */}
                         <div className="lg:flex justify-between items-start mb-6">
                             <div>

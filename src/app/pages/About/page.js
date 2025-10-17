@@ -31,7 +31,7 @@ export default function About() {
     return (
         <section className="relative text-white py-16 container overflow-hidden">
             {/* Background gradient */}
-            <div className="bg-gradient-to-tr from-[#1B0533] to-[#041E47] backdrop-blur-md rounded-br-[100px] rounded-tl-[100px] px-12 py-20 md:p-20">
+            <div className="bg-gradient-to-tr from-[#1B0533] to-[#041E47] backdrop-blur-md rounded-br-[100px] rounded-tl-[100px] px-10 py-20 md:p-20">
                 <div className="inline-block bg-gradient-to-r from-purple-500 to-indigo-400 text-white text-xl font-semibold px-6 py-1 rounded-full shadow-lg mb-4">
                     About me
                 </div>

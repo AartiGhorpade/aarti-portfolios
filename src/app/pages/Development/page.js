@@ -75,9 +75,9 @@ export default function Development() {
                     {projects.map((project, index) => (
                         <div
                             key={index}
-                            className="rounded-xl overflow-hidden hover:bg-zinc-750 transition-colors group p-6 border border-gray-500">
+                            className="rounded-xl overflow-hidden hover:bg-zinc-750 transition-colors group p-4 md:p-6 border border-gray-500">
                             {/* Project Image */}
-                            <div className="h-[300px] md:h-[200px]">
+                            <div className="h-[250px] md:h-[200px]">
                                 <Image
                                     src={project.img}
                                     alt={project.title}
