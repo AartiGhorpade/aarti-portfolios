@@ -6,48 +6,48 @@ import dashboardImg1 from '../../../../public/images/dasboard-img-1.webp'
 import dashboardImg2 from '../../../../public/images/dasboard-img-2.webp'
 import dashboardImg3 from '../../../../public/images/dasboard-img-3.webp'
 import technolabimg from '../../../../public/images/technolab-img.webp'
-import furnitureImg from '../../../../public/images/furniture-webdesign.png'
-import cosmeticsimg from '../../../../public/images/cosmetics-webdesign.png'
-import foodlyimg from '../../../../public/images/foodly-appdesign.png'
 import technologyimg from '../../../../public/images/technology-img.webp'
+import blogImg from '../../../../public/images/blog-img.png'
+
 import Link from 'next/link';
 
 export default function Development() {
     const projects = [
-
+        {
+            img: blogImg,
+            title: "My Blogs",
+            desc: "Developed a full-stack web application using the Next Js and Tailwind Css)",
+            externalLink: true,
+            link: "https://full-stack-blog-app-lovat.vercel.app/"
+        },
         {
             img: bookstoreimg,
             title: "Bookstore Management System",
             desc: "Developed a full-stack web application using the MERN stack (MongoDB, Express.js, React.js, Node.js)",
-            technologies: "Node - Express - SMPP - Postgress - Kafka - Elastic Search",
             externalLink: false
         },
         {
             img: sangamimg,
             title: "Sangam Multipurpose Hall Website",
             desc: "Developed a responsive website using Html, Css, Javascript, jQuery, Bootstrap, Php, MySql",
-            technologies: "Node - Express - SMPP - Postgress - Kafka - Elastic Search",
             externalLink: false
         },
         {
             img: dashboardImg1,
             title: "PHN eLearn LMS (multi-role dashboard)",
             desc: "Developed a responsive web application using React.js and Bootstrap.",
-            technologies: "Node - Express - SMPP - Postgress - Kafka - Elastic Search",
             externalLink: false
         },
         {
             img: dashboardImg2,
             title: "Inventory Management System",
             desc: "Developed a responsive web application using React.js and Bootstrap.",
-            technologies: "Node - Express - SMPP - Postgress - Kafka - Elastic Search",
             externalLink: false
         },
         {
             img: dashboardImg3,
             title: "Samagra Shiksha LMS (admin-role dashboard)",
             desc: "Developed a responsive web application using React.js and Bootstrap.",
-            technologies: "Node - Express - SMPP - Postgress - Kafka - Elastic Search",
             externalLink: false
         },
         {
@@ -55,7 +55,6 @@ export default function Development() {
             title: "PHN Techno Lab Website",
             desc: "Developed a website using Html, Css, Javascript, jQuery, Bootstrap",
             link: "https://phntechnolab.com/",
-            technologies: "Node - Express - SMPP - Postgress - Kafka - Elastic Search",
             externalLink: true
         },
         {
@@ -63,7 +62,6 @@ export default function Development() {
             title: "PHN TechnoLogy Website",
             desc: "Developed a website using Html, Css, Javascript, jQuery, Bootstrap",
             link: "https://phntechnology.com/",
-            technologies: "Node - Express - SMPP - Postgress - Kafka - Elastic Search",
             externalLink: true
         },
     ];
@@ -91,7 +89,7 @@ export default function Development() {
                             <div className="mt-8">
                                 {/* Title and External Link Icon */}
                                 <div className="flex items-start justify-between mb-3">
-                                    <h3 className="text-white font-medium">
+                                    <h3 className="text-white font-bold">
                                         {project.title}
                                     </h3>
                                     {project.externalLink && (
